@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-section {
+  background-color: aqua;
+  height: 100vh;
+}
+
+.main-section-container {
+  background-color: black;
+}
+
+.sub-section {
+  background-color: #185274;
+  height: 100vh;
+}
+/*# sourceMappingURL=styles.css.map */
