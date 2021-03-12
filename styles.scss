@@ -4,13 +4,98 @@
   box-sizing: border-box;
 }
 .main-section {
-  background-color: aqua;
+  background-color: rgb(23, 170, 180);
   height: 100vh;
-  &-container {
-    background-color: black;
+  .main-section-container {
+    display: grid;
+    grid-template-columns: .1fr 1fr .1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "main-section-one main-section-two main-section-three";
   }
 }
+
 .sub-section {
   background-color: #185274;
   height: 100vh;
+}
+
+.main-section-one { 
+  grid-area: main-section-one;
+  outline: 1px solid rgb(241, 204, 204);
+  padding: 200px 82px;
+  h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: white;
+    span {
+      font-weight: 100;
+      font-size: 52px;
+    }
+  }
+  
+  h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    span {
+      font-weight: 100;
+    }
+  }
+}
+
+.main-section-two { grid-area: main-section-two;
+  outline: 1px solid rgb(169, 169, 207);
+  h3{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 70;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-align: right;
+  padding: 250px 80px 0 0;
+  }
+}
+
+.main-section-three { grid-area: main-section-three;
+  outline: 1px solid rgb(165, 236, 165);
+  font-weight: 100; 
+  display: flex;
+  position: relative;
+
+  .main-section-contact {
+    background-color:white;
+    height: 200px;
+    width: 50px;
+    padding-bottom: 24px;
+
+    position: absolute;
+    bottom: 0;
+
+
+    &-text {
+      padding-top: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h4{ 
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-size: 14px;
+        letter-spacing: 2px;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        
+        } 
+    }
+  }
 }

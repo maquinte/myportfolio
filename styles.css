@@ -6,16 +6,122 @@
 }
 
 .main-section {
-  background-color: aqua;
+  background-color: #17aab4;
   height: 100vh;
 }
 
-.main-section-container {
-  background-color: black;
+.main-section .main-section-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .1fr 1fr .1fr;
+      grid-template-columns: .1fr 1fr .1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px 0px;
+      grid-template-areas: "main-section-one main-section-two main-section-three";
 }
 
 .sub-section {
   background-color: #185274;
   height: 100vh;
+}
+
+.main-section-one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: main-section-one;
+  outline: 1px solid #f1cccc;
+  padding: 200px 82px;
+}
+
+.main-section-one h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.main-section-one h1 span {
+  font-weight: 100;
+  font-size: 52px;
+}
+
+.main-section-one h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.main-section-one h2 span {
+  font-weight: 100;
+}
+
+.main-section-two {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-section-two;
+  outline: 1px solid #a9a9cf;
+}
+
+.main-section-two h3 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 70;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-align: right;
+  padding: 250px 80px 0 0;
+}
+
+.main-section-three {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: main-section-three;
+  outline: 1px solid #a5eca5;
+  font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.main-section-three .main-section-contact {
+  background-color: white;
+  height: 200px;
+  width: 50px;
+  padding-bottom: 24px;
+  position: absolute;
+  bottom: 0;
+}
+
+.main-section-three .main-section-contact-text {
+  padding-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-section-three .main-section-contact-text h4 {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 14px;
+  letter-spacing: 2px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=styles.css.map */
